@@ -74,9 +74,9 @@ public:
                     cur_token = Token::TERM;
                     break;
                 } else
-                    throw std::string(
+                    throw std::runtime_error(
                             std::string("Illegal character ") + static_cast<char>(cur_char) + " at position " +
-                            static_cast<char>(cur_pos));
+                            std::to_string(cur_pos));
             }
         }
     }

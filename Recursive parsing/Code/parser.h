@@ -21,8 +21,8 @@ private:
                 return Tree("Z", {sub, cont});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
@@ -53,8 +53,8 @@ private:
                 return Tree("Z'", {});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
@@ -71,8 +71,8 @@ private:
                 return Tree("X", {sub, cont});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
@@ -96,8 +96,8 @@ private:
                 return Tree("X'", {});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                  static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
@@ -118,8 +118,8 @@ private:
                 return Tree("Y", {sub});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
@@ -137,15 +137,15 @@ private:
                 //// Z
                 Tree sub = Z();
                 if (lex.cur_token != RIGHT) {
-                    throw std::string(std::string(") expected ") +
-                                      static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                    throw std::runtime_error(std::string(") expected ") +
+                                      static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
                 }
                 lex.next_token();
                 return Tree("W", {Tree("("), sub, Tree(")")});
             }
             default: {
-                throw std::string(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
+                throw std::runtime_error(std::string("Something went wrong here: ") +
+                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
             }
         }
     }
