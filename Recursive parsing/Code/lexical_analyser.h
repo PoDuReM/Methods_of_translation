@@ -30,7 +30,7 @@ public:
 
     size_t get_cur_pos() { return cur_pos; }
 
-    char get_cur_term() {return cur_term; }
+    char get_cur_term() { return cur_term; }
 
     Token cur_token;
 
@@ -74,7 +74,9 @@ public:
                     cur_token = Token::TERM;
                     break;
                 } else
-                    throw std::string(std::string("Illegal character ") + static_cast<char>(cur_char) + " at position " + static_cast<char>(cur_pos));
+                    throw std::string(
+                            std::string("Illegal character ") + static_cast<char>(cur_char) + " at position " +
+                            static_cast<char>(cur_pos));
             }
         }
     }

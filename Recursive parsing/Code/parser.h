@@ -8,15 +8,7 @@
 class Parser {
     LexicalAnalyser lex;
 
-public:
-    Parser(std::istream &istr) : lex(istr) {}
-
-    Tree parse() {
-        lex.next_token();
-        return Z();
-    }
-
-private: 
+private:
     Tree Z() {
         switch (lex.cur_token) {
             case NOT:
@@ -35,7 +27,7 @@ private:
         }
     }
 
-    Tree ZP() {        
+    Tree ZP() {
         switch (lex.cur_token) {
             case OR: {
                 std::string tkn = "|";
@@ -54,11 +46,11 @@ private:
                 //// Z'
                 Tree cont = ZP();
                 return Tree("Z'", {Tree(tkn), sub, cont});
-        }
-            case RIGHT: 
+            }
+            case RIGHT:
             case END: {
                 //// eps
-                return Tree("Z'", {}); // empty tree???
+                return Tree("Z'", {});
             }
             default: {
                 throw std::string(std::string("Something went wrong here: ") +
@@ -72,8 +64,6 @@ private:
             case NOT:
             case TERM:
             case LEFT: {
-//                //// W
-//                Tree sub = W();
                 //// Y
                 Tree sub = Y();
                 //// X'
@@ -92,8 +82,6 @@ private:
             case AND: {
                 std::string tkn = "&";
                 lex.next_token();
-//                //// W
-//                Tree sub = W();
                 //// Y
                 Tree sub = Y();
                 //// X'
@@ -102,7 +90,7 @@ private:
             }
             case OR:
             case XOR:
-            case RIGHT: 
+            case RIGHT:
             case END: {
                 //// eps
                 return Tree("X'", {});
@@ -128,7 +116,6 @@ private:
                 //// W
                 Tree sub = W();
                 return Tree("Y", {sub});
-//                return Tree("Y", {Tree("!"), sub});
             }
             default: {
                 throw std::string(std::string("Something went wrong here: ") +
@@ -153,7 +140,7 @@ private:
                     throw std::string(std::string(") expected ") +
                                       static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
                 }
-                lex.next_token(); // added
+                lex.next_token();
                 return Tree("W", {Tree("("), sub, Tree(")")});
             }
             default: {
@@ -161,5 +148,13 @@ private:
                                   static_cast<char>(lex.cur_char) + " at position ", lex.cur_pos);
             }
         }
+    }
+
+public:
+    Parser(std::istream &istr) : lex(istr) {}
+
+    Tree parse() {
+        lex.next_token();
+        return Z();
     }
 };
