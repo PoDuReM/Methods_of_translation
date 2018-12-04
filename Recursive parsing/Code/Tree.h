@@ -15,8 +15,10 @@ struct Tree {
     void print_tkn(std::string s) {
         if (s.length() == 1) {
             std::cout << s << "   ";
+//            std::cout << s << "---";
         } else {
             std::cout << s << "  ";
+//            std::cout << s << "--";
         }
     }
 
@@ -31,6 +33,7 @@ struct Tree {
             std::cout << std::endl;
             for (size_t j = 0; j < tab; ++j) {
                 std::cout << "    ";
+//                std::cout << "    |";
             }
         }    
     }

@@ -21,8 +21,12 @@ private:
                 return Tree("Z", {sub, cont});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                if (lex.get_cur_char() == -1) {
+                    throw std::runtime_error(std::string("EOF found. Expected n, ! or (."));
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected n, ! or (.");
+                }
             }
         }
     }
@@ -30,7 +34,13 @@ private:
     Tree ZP() {
         switch (lex.cur_token) {
             case OR: {
-                std::string tkn = "|";
+                std::string tkn;
+                if (lex.cur_token == OR) {
+                    tkn = "|";
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                                    std::to_string(lex.last_pos) + ". Expected |.");
+                }
                 lex.next_token();
                 //// X
                 Tree sub = X();
@@ -39,7 +49,13 @@ private:
                 return Tree("Z'", {Tree(tkn), sub, cont});
             }
             case XOR: {
-                std::string tkn = "^";
+                std::string tkn;
+                if (lex.cur_token == XOR) {
+                    tkn = "^";
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected ^.");
+                }
                 lex.next_token();
                 //// X
                 Tree sub = X();
@@ -49,12 +65,12 @@ private:
             }
             case RIGHT:
             case END: {
-                //// eps
-                return Tree("Z'", {});
+                //// epsilon
+                return Tree("Z'", {Tree("ε")});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                         std::to_string(lex.last_pos) + ". Expected |, ^ or ).");
             }
         }
     }
@@ -71,8 +87,12 @@ private:
                 return Tree("X", {sub, cont});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                if (lex.get_cur_token() == END) {
+                    throw std::runtime_error(std::string("EOF found. Expected n, ! or (."));
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected n, ! or (.");
+                }
             }
         }
     }
@@ -80,7 +100,13 @@ private:
     Tree XP() {
         switch (lex.cur_token) {
             case AND: {
-                std::string tkn = "&";
+                std::string tkn;
+                if (lex.cur_token == AND) {
+                    tkn = "&";
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected &.");
+                }
                 lex.next_token();
                 //// Y
                 Tree sub = Y();
@@ -92,12 +118,12 @@ private:
             case XOR:
             case RIGHT:
             case END: {
-                //// eps
-                return Tree("X'", {});
+                //// epsilon
+                return Tree("X'", {Tree("ε")});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                  static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                         std::to_string(lex.last_pos) + ". Expected &, |, ^, ).");
             }
         }
     }
@@ -105,7 +131,13 @@ private:
     Tree Y() {
         switch (lex.cur_token) {
             case NOT: {
-                std::string tkn = "!";
+                std::string tkn;
+                if (lex.cur_token == NOT) {
+                    tkn = "!";
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected !.");
+                }
                 lex.next_token();
                 //// W
                 Tree sub = W();
@@ -118,8 +150,12 @@ private:
                 return Tree("Y", {sub});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                if (lex.get_cur_token() == END) {
+                    throw std::runtime_error(std::string("EOF found. Expected n, ! or (."));
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected n, ! or (.");
+                }
             }
         }
     }
@@ -128,7 +164,12 @@ private:
         switch (lex.cur_token) {
             case TERM: {
                 std::string tkn;
-                tkn += lex.get_cur_term();
+                if (lex.cur_token == TERM) {
+                    tkn += lex.get_cur_term();
+                } else {
+                    throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                             std::to_string(lex.last_pos) + ". Expected n.");
+                }
                 lex.next_token();
                 return Tree("W", {Tree(tkn)});
             }
@@ -138,14 +179,14 @@ private:
                 Tree sub = Z();
                 if (lex.cur_token != RIGHT) {
                     throw std::runtime_error(std::string(") expected ") +
-                                      static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                                      std::to_string(lex.last_char) + " at position " + std::to_string(lex.last_pos));
                 }
                 lex.next_token();
                 return Tree("W", {Tree("("), sub, Tree(")")});
             }
             default: {
-                throw std::runtime_error(std::string("Something went wrong here: ") +
-                                         static_cast<char>(lex.cur_char) + " at position " + std::to_string(lex.cur_pos));
+                throw std::runtime_error(std::string("Illegal character ") + lex.last_char + " at position " +
+                                         std::to_string(lex.last_pos) + ". Expected n or ! or expression in brackets.");
             }
         }
     }
@@ -155,6 +196,11 @@ public:
 
     Tree parse() {
         lex.next_token();
-        return Z();
+        Tree pt = Z();
+        if (lex.cur_token != END) {
+            throw std::runtime_error(std::string("Illegal character ") +
+                                     lex.last_char + " at position " + std::to_string(lex.last_pos) + ". Expected EOF.");
+        }
+        return pt;
     }
 };
