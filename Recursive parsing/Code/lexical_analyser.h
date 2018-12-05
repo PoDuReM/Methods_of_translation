@@ -43,7 +43,6 @@ public:
     Token cur_token;
 
     void next_token() {
-//        next_char();
         skip_blank();
         last_char = cur_char;
         last_pos = cur_pos;

@@ -4,21 +4,19 @@
 
 struct Tree {
     std::string node;
-    std::vector <Tree> children;
+    std::vector<Tree> children;
 
-    Tree (std::string node, std::vector <Tree> children) : node(node), children(children) {}
+    Tree(std::string node, std::vector<Tree> children) : node(node), children(children) {}
 
-    Tree (std::string node) : node(node) {}
+    Tree(std::string node) : node(node) {}
 
     int it = -1;
 
     void print_tkn(std::string s) {
         if (s.length() == 1) {
             std::cout << s << "   ";
-//            std::cout << s << "---";
         } else {
             std::cout << s << "  ";
-//            std::cout << s << "--";
         }
     }
 
@@ -34,18 +32,10 @@ struct Tree {
             } else {
                 children[i].visualise(tab);
             }
-//            if (children[i].children.size() < 3) {
-                std::cout << std::endl;
-//            } else {
-//                --tab;
-//            }
-//            if (children[i].node == "^" || children[i].node == "|" || children[i].node == "&" || children[i].node == "!") {
-//                --tab;
-//            }
+            std::cout << std::endl;
             for (size_t j = 0; j < tab; ++j) {
                 std::cout << "    ";
-//                std::cout << "    |";
             }
-        }    
+        }
     }
 };
