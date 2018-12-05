@@ -29,8 +29,19 @@ struct Tree {
         }
         print_tkn(node);
         for (size_t i = 0; i < children.size(); ++i) {
-            children[i].visualise(++tab);
-            std::cout << std::endl;
+            if (children[i].children.size() < 3) {
+                children[i].visualise(++tab);
+            } else {
+                children[i].visualise(tab);
+            }
+//            if (children[i].children.size() < 3) {
+                std::cout << std::endl;
+//            } else {
+//                --tab;
+//            }
+//            if (children[i].node == "^" || children[i].node == "|" || children[i].node == "&" || children[i].node == "!") {
+//                --tab;
+//            }
             for (size_t j = 0; j < tab; ++j) {
                 std::cout << "    ";
 //                std::cout << "    |";

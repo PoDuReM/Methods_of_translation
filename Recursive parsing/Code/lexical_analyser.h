@@ -18,7 +18,6 @@ public:
     }
 
     void next_char() {
-//        skip_blank();
         if (is.peek() == EOF) {
             cur_char = -1;
             return;
