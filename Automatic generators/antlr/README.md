@@ -39,3 +39,21 @@ N → 0 ∣ 1 ∣ 2 ∣ 3 ∣ 4 ∣ 5 ∣ 6 ∣ 7 ∣ 8 ∣ 9
 > Вывод строки 2+2∗2: ```S⇒SOS⇒SOSOS⇒2OSOS⇒2O2OS⇒2O2O2⇒2+2O2⇒2+2∗2```
 
 ## 2. Построение автоматического генератора парсера
+Грамматика для арифмитичческих операций представлена в файле Expr.g4
+
+TODO: link
+
+Команды для генерации парсера на java
+TODO:  выделение команд
+antlr4 Expr.g4
+javac Expr*.java
+Построить дерево
+grun Expr prog -gui t.expr
+
+Генерация ExprVisitor.java
+antlr4 -no-listener -visitor Expr.g4
+
+Собираем
+javac Calc.java Expr*.java
+
+java Calc t.expr
