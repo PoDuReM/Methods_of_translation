@@ -10,18 +10,10 @@ public class Visitor extends ExprBaseVisitor<Integer> {
     public Integer visitAssign(ExprParser.AssignContext ctx) {
         String id = ctx.ID().getText(); // id is left-hand side of '='
         int value = visit(ctx.expr()); // compute value of expression on right
+        System.out.print(id + " = ");
+        System.out.println(value);
         memory.put(id, value); // store it in our memory
         return value;
-    }
-
-    /** expr ENDL */
-    @Override
-    public Integer visitPrintExpr(ExprParser.PrintExprContext ctx) {
-        String id = ctx.ID().getText();
-        Integer value = visit(ctx.expr()); // evaluate the expr child
-        System.out.print(id + " = ");
-        System.out.println(value); // print the result
-        return 0; // return dummy value
     }
 
     /** INT */
@@ -60,5 +52,5 @@ public class Visitor extends ExprBaseVisitor<Integer> {
     @Override
     public Integer visitParens(ExprParser.ParensContext ctx) {
         return visit(ctx.expr()); // return child expr's value
-      }
+    }
 }

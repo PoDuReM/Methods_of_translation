@@ -3,8 +3,7 @@ grammar Expr;
 prog: stat+
     ;
 
-stat: ID '=' expr ENDL  # printExpr
-    | ID '=' expr ENDL  # assign
+stat: ID '=' expr ENDL  # assign
     | ENDL              # blank
     ;
 

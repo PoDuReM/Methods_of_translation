@@ -13,8 +13,7 @@ public class Calc {
     CommonTokenStream tokens = new CommonTokenStream(lexer);
     ExprParser parser = new ExprParser(tokens);
     ParseTree tree = parser.prog(); // parse; start at prog
-    //System.out.println(tree.toStringTree(parser)); // print tree as text
-
+    //System.out.println(tree.toStringTree(parser));
     Visitor eval = new Visitor();
     eval.visit(tree);
   }
