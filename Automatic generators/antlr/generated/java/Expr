@@ -1,0 +1,334 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 561 212
+
+0.3 setlinewidth
+%% x y w h highlight
+/highlight {
+        4 dict begin
+        /h exch def
+        /w exch def
+        /y exch def
+        /x exch def
+        gsave
+        newpath
+        x y moveto
+        0 h rlineto     % up to left corner
+        w 0 rlineto     % to upper right corner
+        0 h neg rlineto % to lower right corner
+        w neg 0 rlineto % back home to lower left corner
+        closepath
+        .95 .83 .82 setrgbcolor
+        fill
+        grestore
+        end
+} def
+/Helvetica findfont 11 scalefont setfont
+279.469 195.492 moveto
+41.319 178.492 lineto
+41.319 162.910 moveto
+4.058 145.910 lineto
+41.319 162.910 moveto
+19.328 145.910 lineto
+41.319 162.910 moveto
+42.238 145.910 lineto
+42.238 130.328 moveto
+42.238 113.328 lineto
+41.319 162.910 moveto
+63.464 145.910 lineto
+41.319 162.910 moveto
+78.580 145.910 lineto
+279.469 195.492 moveto
+132.486 178.492 lineto
+132.486 162.910 moveto
+95.225 145.910 lineto
+132.486 162.910 moveto
+110.495 145.910 lineto
+132.486 162.910 moveto
+133.404 145.910 lineto
+133.404 130.328 moveto
+133.404 113.328 lineto
+132.486 162.910 moveto
+154.631 145.910 lineto
+132.486 162.910 moveto
+169.747 145.910 lineto
+279.469 195.492 moveto
+223.653 178.492 lineto
+223.653 162.910 moveto
+186.392 145.910 lineto
+223.653 162.910 moveto
+201.662 145.910 lineto
+223.653 162.910 moveto
+224.572 145.910 lineto
+224.572 130.328 moveto
+224.572 113.328 lineto
+223.653 162.910 moveto
+245.798 145.910 lineto
+223.653 162.910 moveto
+260.914 145.910 lineto
+279.469 195.492 moveto
+314.358 178.492 lineto
+314.358 162.910 moveto
+277.251 145.910 lineto
+314.358 162.910 moveto
+292.213 145.910 lineto
+314.358 162.910 moveto
+315.122 145.910 lineto
+315.122 130.328 moveto
+292.213 113.328 lineto
+292.213 97.746 moveto
+292.213 80.746 lineto
+315.122 130.328 moveto
+315.122 113.328 lineto
+315.122 130.328 moveto
+338.032 113.328 lineto
+338.032 97.746 moveto
+316.195 80.746 lineto
+316.195 65.164 moveto
+316.195 48.164 lineto
+338.032 97.746 moveto
+338.032 80.746 lineto
+338.032 97.746 moveto
+359.869 80.746 lineto
+359.869 65.164 moveto
+359.869 48.164 lineto
+314.358 162.910 moveto
+336.349 145.910 lineto
+314.358 162.910 moveto
+351.465 145.910 lineto
+279.469 195.492 moveto
+426.606 178.492 lineto
+426.606 162.910 moveto
+389.499 145.910 lineto
+426.606 162.910 moveto
+404.461 145.910 lineto
+426.606 162.910 moveto
+427.371 145.910 lineto
+427.371 130.328 moveto
+405.534 113.328 lineto
+405.534 97.746 moveto
+384.005 80.746 lineto
+405.534 97.746 moveto
+405.534 80.746 lineto
+405.534 65.164 moveto
+382.624 48.164 lineto
+382.624 32.582 moveto
+382.624 15.582 lineto
+405.534 65.164 moveto
+405.534 48.164 lineto
+405.534 65.164 moveto
+428.444 48.164 lineto
+428.444 32.582 moveto
+428.444 15.582 lineto
+405.534 97.746 moveto
+427.063 80.746 lineto
+427.371 130.328 moveto
+427.371 113.328 lineto
+427.371 130.328 moveto
+449.208 113.328 lineto
+449.208 97.746 moveto
+449.208 80.746 lineto
+426.606 162.910 moveto
+448.597 145.910 lineto
+426.606 162.910 moveto
+463.713 145.910 lineto
+279.469 195.492 moveto
+517.620 178.492 lineto
+517.620 162.910 moveto
+480.358 145.910 lineto
+517.620 162.910 moveto
+495.628 145.910 lineto
+517.620 162.910 moveto
+518.538 145.910 lineto
+518.538 130.328 moveto
+518.538 113.328 lineto
+517.620 162.910 moveto
+539.765 145.910 lineto
+517.620 162.910 moveto
+554.881 145.910 lineto
+417.740 167.910 moveto
+(stat) show
+stroke
+123.620 167.910 moveto
+(stat) show
+stroke
+386.749 135.328 moveto
+(k) show
+stroke
+33.064 102.746 moveto
+(193) show
+stroke
+311.910 102.746 moveto
+(+) show
+stroke
+268.464 200.492 moveto
+(prog) show
+stroke
+401.249 135.328 moveto
+(=) show
+stroke
+31.540 135.328 moveto
+(expr) show
+stroke
+304.425 135.328 moveto
+(expr) show
+stroke
+256.327 135.328 moveto
+(\\n) show
+stroke
+349.172 70.164 moveto
+(expr) show
+stroke
+416.674 135.328 moveto
+(expr) show
+stroke
+477.300 135.328 moveto
+(g) show
+stroke
+334.820 135.328 moveto
+(;) show
+stroke
+425.232 102.746 moveto
+(*) show
+stroke
+371.927 37.582 moveto
+(expr) show
+stroke
+356.811 37.582 moveto
+(2) show
+stroke
+305.498 70.164 moveto
+(expr) show
+stroke
+130.347 102.746 moveto
+(5) show
+stroke
+305.492 167.910 moveto
+(stat) show
+stroke
+183.334 135.328 moveto
+(b) show
+stroke
+346.878 135.328 moveto
+(\\n) show
+stroke
+214.787 167.910 moveto
+(stat) show
+stroke
+508.754 167.910 moveto
+(stat) show
+stroke
+92.167 135.328 moveto
+(a) show
+stroke
+274.501 135.328 moveto
+(c) show
+stroke
+1.000 135.328 moveto
+(q) show
+stroke
+538.236 135.328 moveto
+(;) show
+stroke
+379.566 5.000 moveto
+(1) show
+stroke
+382.173 70.164 moveto
+(\() show
+stroke
+327.335 102.746 moveto
+(expr) show
+stroke
+61.935 135.328 moveto
+(;) show
+stroke
+394.836 70.164 moveto
+(expr) show
+stroke
+492.416 135.328 moveto
+(=) show
+stroke
+335.893 70.164 moveto
+(*) show
+stroke
+438.511 102.746 moveto
+(expr) show
+stroke
+289.155 70.164 moveto
+(a) show
+stroke
+459.126 135.328 moveto
+(\\n) show
+stroke
+550.294 135.328 moveto
+(\\n) show
+stroke
+213.874 135.328 moveto
+(expr) show
+stroke
+425.232 70.164 moveto
+(\)) show
+stroke
+417.746 37.582 moveto
+(expr) show
+stroke
+73.993 135.328 moveto
+(\\n) show
+stroke
+515.480 102.746 moveto
+(q) show
+stroke
+244.269 135.328 moveto
+(;) show
+stroke
+165.160 135.328 moveto
+(\\n) show
+stroke
+394.836 102.746 moveto
+(expr) show
+stroke
+289.001 135.328 moveto
+(=) show
+stroke
+446.150 70.164 moveto
+(3) show
+stroke
+122.707 135.328 moveto
+(expr) show
+stroke
+198.450 135.328 moveto
+(=) show
+stroke
+221.514 102.746 moveto
+(6) show
+stroke
+16.116 135.328 moveto
+(=) show
+stroke
+447.069 135.328 moveto
+(;) show
+stroke
+107.283 135.328 moveto
+(=) show
+stroke
+153.102 135.328 moveto
+(;) show
+stroke
+507.841 135.328 moveto
+(expr) show
+stroke
+425.386 5.000 moveto
+(2) show
+stroke
+32.453 167.910 moveto
+(stat) show
+stroke
+313.137 37.582 moveto
+(b) show
+stroke
+402.322 37.582 moveto
+(+) show
+stroke
+281.516 102.746 moveto
+(expr) show
+stroke
+%%Trailer
