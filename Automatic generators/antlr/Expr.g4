@@ -3,24 +3,25 @@ grammar Expr;
 prog: stat+
     ;
 
-stat: ID '=' expr ENDL  # assign
-    | ENDL              # blank
+stat: ID ASS expr SEM ENDL  # assign
+    | ENDL                  # blank
     ;
 
-expr: expr op=('*'|'/') expr  # MulDiv
-    | expr op=('+'|'-') expr  # AddSub
+expr: expr op=(MUL|DIV) expr  # MulDiv
+    | expr op=(ADD|SUB) expr  # AddSub
     | INT                     # int
     | ID                      # id
-    | '(' expr ')'            # parens
+    | OPEN expr CLOSE         # parens
     ;
 
 MUL  : '*' ;
 DIV  : '/' ;
 ADD  : '+' ;
 SUB  : '-' ;
+ASS  : '=' ;
 OPEN : '(' ;
 CLOSE: ')' ;
-ASS  : '=' ;
+SEM  : ';' ;
 ID   : [a-z]+ ;
 INT  : [0-9]+ ;
 ENDL : '\r'? '\n' ;

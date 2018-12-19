@@ -41,7 +41,8 @@ N → 0 ∣ 1 ∣ 2 ∣ 3 ∣ 4 ∣ 5 ∣ 6 ∣ 7 ∣ 8 ∣ 9
 ## 2. Построение автоматического генератора парсера
 Грамматика для арифмитичческих операций представлена в файле [Expr.g4](Expr.g4).
 
-Команды для генерации парсера на java:
+### Порядок выполнения
+Сгенерируем парсер на java:
 ```bash
 antlr4 Expr.g4
 javac Expr*.java
@@ -50,11 +51,11 @@ javac Expr*.java
 ```bash
 grun Expr prog -gui t.expr
 ```
-
-Генерируем: [ExprVisitor.java](ExprVisitor.java)
+Сгенерируем интерфейс для visitor [ExprVisitor.java](ExprVisitor.java):
 ```bash
-antlr4 -no-listener -visitor Expr.g4
+$ antlr4 -no-listener -visitor Expr.g4
 ```
+Из класса ```main``` в [Calc.java](Calc.java) вызывается parser и visitor.
 Собираем:
 ```bash
 javac Calc.java Expr*.java
