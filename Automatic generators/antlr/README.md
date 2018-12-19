@@ -56,14 +56,14 @@ $ grun Expr prog -gui t.expr
 
 grun Expr prog -gui t.expr -ps generated/java/Expr
 ```
-Сгенерируем интерфейс для visitor [ExprVisitor.java](ExprVisitor.java):
+Сгенерируем интерфейс для visitor [ExprVisitor.java](generated/java/ExprVisitor.java):
 ```bash
 $ antlr4 -no-listener -visitor Expr.g4
 
 antlr4 -no-listener -visitor -o generated/java Expr.g4
 ```
-Переменные будем хранить в *HashMap<String, Integer>*. Реализуем операции из грамматики в [Visitor.java](Visitor.java).</br>
-Из класса ```main``` в [Calc.java](Calc.java) вызывается parser и visitor.
+Переменные будем хранить в *HashMap<String, Integer>*. Реализуем операции из грамматики в [Visitor.java](src/Visitor.java).</br>
+Из класса ```main``` в [Calc.java](src/Calc.java) вызывается parser и visitor.
 Собираем:
 ```bash
 $ javac Calc.java Expr*.java
@@ -74,5 +74,5 @@ javac src/Calc.java generated/java/Expr*.java
 ```bash
 $ java Calc t.expr
 
-java src/Calc t.expr
+java ??? Calc t.expr
 ```
