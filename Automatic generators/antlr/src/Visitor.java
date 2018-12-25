@@ -8,7 +8,7 @@ public class Visitor extends ExprBaseVisitor<Integer> {
     /** ID '=' expr ENDL */
     @Override
     public Integer visitAssign(ExprParser.AssignContext ctx) {
-        String id = ctx.ID().getText(); // id is left-hand side of '='
+        String id = ctx.ID().getText();
         int value = visit(ctx.expr()); // compute value of expression on right
         System.out.print(id + " = ");
         System.out.println(value);

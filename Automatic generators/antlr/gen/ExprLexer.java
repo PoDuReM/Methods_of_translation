@@ -1,4 +1,4 @@
-// Generated from Expr.g4 by ANTLR 4.7.2
+// Generated from /Users/tina/Documents/ITMO/CT/MT/Automatic generators/antlr/Expr.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -10,7 +10,7 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ExprLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -26,27 +26,18 @@ public class ExprLexer extends Lexer {
 		"DEFAULT_MODE"
 	};
 
-	private static String[] makeRuleNames() {
-		return new String[] {
-			"MUL", "DIV", "ADD", "SUB", "POW", "ASS", "OPEN", "CLOSE", "SEM", "ID", 
-			"INT", "ENDL", "WS"
-		};
-	}
-	public static final String[] ruleNames = makeRuleNames();
+	public static final String[] ruleNames = {
+		"MUL", "DIV", "ADD", "SUB", "POW", "ASS", "OPEN", "CLOSE", "SEM", "ID", 
+		"INT", "ENDL", "WS"
+	};
 
-	private static String[] makeLiteralNames() {
-		return new String[] {
-			null, "'*'", "'/'", "'+'", "'-'", "'^'", "'='", "'('", "')'", "';'"
-		};
-	}
-	private static final String[] _LITERAL_NAMES = makeLiteralNames();
-	private static String[] makeSymbolicNames() {
-		return new String[] {
-			null, "MUL", "DIV", "ADD", "SUB", "POW", "ASS", "OPEN", "CLOSE", "SEM", 
-			"ID", "INT", "ENDL", "WS"
-		};
-	}
-	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
+	private static final String[] _LITERAL_NAMES = {
+		null, "'*'", "'/'", "'+'", "'-'", "'^'", "'='", "'('", "')'", "';'"
+	};
+	private static final String[] _SYMBOLIC_NAMES = {
+		null, "MUL", "DIV", "ADD", "SUB", "POW", "ASS", "OPEN", "CLOSE", "SEM", 
+		"ID", "INT", "ENDL", "WS"
+	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**

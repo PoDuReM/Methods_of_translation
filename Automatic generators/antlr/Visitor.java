@@ -30,6 +30,21 @@ public class Visitor extends ExprBaseVisitor<Integer> {
         return 0;
     }
 
+    /** POW */
+    @Override
+    public Integer visitPower(ExprParser.PowerContext ctx) {
+        int left = visit(ctx.expr(0));
+        int right = visit(ctx.expr(1));
+        return (int)Math.pow((double)left, (double)right);
+    }
+
+    /** UNAR */
+    @Override
+    public Integer visitUnar(ExprParser.UnarContext ctx) {
+        int value = visit(ctx.expr());
+        return -value;
+    }
+
     /** expr op=('*'|'/') expr */
     @Override
     public Integer visitMulDiv(ExprParser.MulDivContext ctx) {
