@@ -42,37 +42,27 @@ N → 0 ∣ 1 ∣ 2 ∣ 3 ∣ 4 ∣ 5 ∣ 6 ∣ 7 ∣ 8 ∣ 9
 Грамматика для арифмитичческих операций представлена в файле [Expr.g4](Expr.g4).
 
 ### Порядок выполнения
+Чтобы запустить грамматику, достаточно запустить ```./script```. Далее подробно описано, что происходит.
 Сгенерируем парсер на java:
 ```bash
 $ antlr4 Expr.g4
 $ javac Expr*.java
-
-antlr4 -o generated/java Expr.g4
-javac generated/java/Expr*.java
 ```
 Построим и визуализируем дерево:
 ```bash
 $ grun Expr prog -gui t.expr
-
-grun Expr prog -gui t.expr -ps generated/java/Expr
 ```
 Сгенерируем интерфейс для visitor [ExprVisitor.java](generated/java/ExprVisitor.java):
 ```bash
 $ antlr4 -no-listener -visitor Expr.g4
-
-antlr4 -no-listener -visitor -o generated/java Expr.g4
 ```
 Переменные будем хранить в *HashMap<String, Integer>*. Реализуем операции из грамматики в [Visitor.java](src/Visitor.java).</br>
 Из класса ```main``` в [Calc.java](src/Calc.java) вызывается parser и visitor.
 Собираем:
 ```bash
 $ javac Calc.java Expr*.java
-
-javac src/Calc.java generated/java/Expr*.java
 ```
 Запускаем:
 ```bash
 $ java Calc t.expr
-
-java ??? Calc t.expr
 ```
