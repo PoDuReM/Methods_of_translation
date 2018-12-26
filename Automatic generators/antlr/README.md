@@ -52,7 +52,7 @@ $ javac Expr*.java
 ```bash
 $ grun Expr prog -gui t.expr
 ```
-Сгенерируем интерфейс для visitor [ExprVisitor.java](generated/java/ExprVisitor.java):
+Сгенерируем интерфейс [ExprVisitor.java](generated/java/ExprVisitor.java) для visitor:
 ```bash
 $ antlr4 -no-listener -visitor Expr.g4
 ```

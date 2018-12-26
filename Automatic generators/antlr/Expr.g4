@@ -10,7 +10,7 @@ stat: ID ASS expr SEM ENDL       # assign
 expr: expr op=(MUL|DIV) expr     # MulDiv
     | expr op=(ADD|SUB) expr     # AddSub
     | op=SUB expr                # unar
-    | expr POW<assoc=right> expr # power
+    | <assoc=right> expr POW expr # power
     | INT                        # int
     | ID                         # id
     | OPEN expr CLOSE            # parens
