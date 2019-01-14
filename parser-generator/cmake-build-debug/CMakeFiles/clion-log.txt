@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/tina/Documents/ITMO/CT/MT/parser-generator
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.13 or higher is required.  You are running version 3.12.3
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/tina/Documents/ITMO/CT/MT/parser-generator/cmake-build-debug/CMakeFiles/CMakeOutput.log".
