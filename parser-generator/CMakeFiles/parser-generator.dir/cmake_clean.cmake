@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/parser-generator.dir/main.cpp.o"
+  "CMakeFiles/parser-generator.dir/src/Grammar.cpp.o"
+  "CMakeFiles/parser-generator.dir/src/NonTerm.cpp.o"
+  "CMakeFiles/parser-generator.dir/src/Term.cpp.o"
+  "CMakeFiles/parser-generator.dir/src/Unit.cpp.o"
+  "CMakeFiles/parser-generator.dir/src/main.cpp.o"
+  "CMakeFiles/parser-generator.dir/generated/GrammarLexer.cpp.o"
+  "CMakeFiles/parser-generator.dir/generated/GrammarParser.cpp.o"
   "CMakeFiles/parser-generator.dir/generated/TLexer.cpp.o"
   "CMakeFiles/parser-generator.dir/generated/TParser.cpp.o"
   "CMakeFiles/parser-generator.dir/generated/TParserBaseListener.cpp.o"

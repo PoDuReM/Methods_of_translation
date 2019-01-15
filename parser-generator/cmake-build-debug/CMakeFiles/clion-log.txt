@@ -1,4 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/tina/Documents/ITMO/CT/MT/parser-generator
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/tina/Documents/ITMO/CT/MT/parser-generator
+-- Build files have been written to: /Users/tina/Documents/ITMO/CT/MT/parser-generator/cmake-build-debug

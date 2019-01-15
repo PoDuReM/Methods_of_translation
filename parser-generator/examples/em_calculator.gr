@@ -1,0 +1,34 @@
+✋: add_sub;
+
+add_sub 🤯 [int]:
+    🤔 fact add_sub_cont{0}       { $val = $fact.val + $add_sub_cont.val; }
+;
+
+add_sub_cont 🤓[int a] 🤯 [int]:
+    🤔 ADD fact add_sub_cont{a + 1}  { $val = $fact.val + $add_sub_cont.val; std::cout << a << std::endl; }
+    🤔 SUB fact add_sub_cont{a + 1}  { $val = -$fact.val + $add_sub_cont.val; std::cout << a << std::endl; }
+    🤔                               { $val = 0; std::cout << a << std::endl; }
+;
+
+fact 🤯 [int]:
+    🤔 atom fact_cont{$atom.val}     { $val = $fact_cont.val; }
+;
+
+fact_cont 🤓[int x] 🤯 [int]:
+    🤔 FACT fact_cont{calc_fact(x)}         { $val = $fact_cont.val; }
+    🤔                                      { $val = x; }
+;
+
+atom 🤯 [int]:
+    🤔 OPEN add_sub CLOSE    { $val = $add_sub.val; }
+    🤔 NUM                   { $val = std::stoi($NUM.val); }
+;
+
+ADD: "\\+";
+SUB: "\\-";
+FACT: "\\!";
+OPEN: "\\(";
+CLOSE: "\\)";
+NUM: "\\d+";
+
+👉: ' ' '\t' '\n' '\r';

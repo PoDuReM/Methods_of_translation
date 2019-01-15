@@ -1,2 +1,18 @@
-# parser-generator
-This is a simple generator of parsers for text which is suited for the given grammar.
+# Отчёт о лаботаторной работе №4
+
+Необходимо написать некоторый упрощенный аналог генератора трансляторов. Рекомендуется брать за основу синтаксис ANTLR или Bison. Рекомендуется для чтения входного файла с грамматикой сгенерировать разборщик с помощью ANTLR или Bison.<br>
+Обязательное требование: должен быть лексический анализатор, не должно быть ограничения, что токен это один символ.
+LL(1)-грамматики, нисходящий разбор
+поддержка синтезируемых атрибутов
+поддержка наследуемых атрибутов
+
+## 1. Разработка грамматики собственного парсера
+В [Grammar.g4](Grammar.g4) представлена грамматика нашего генератора трансляторов. Сгенерированные файлы можно найти [тут](generated/).
+Для генерации воспользуемся [скриптом](gen.sh) или выполним:
+```bash
+$ export CLASSPATH=".:/usr/local/lib/antlr-4.7.2-complete.jar:$CLASSPATH"
+$ java -Xmx500M -cp "/usr/local/lib/antlr-4.7.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool -Dlanguage=Cpp -no-listener -no-visitor -o generated/ Grammar.g4
+
+```
+В [src](src/) лежат сами файлы для генерации. Сгенерированный код по примеру [em_calculator.gr](examples/em_calculator.gr) можно посмотреть [тут](src/gen).
+
