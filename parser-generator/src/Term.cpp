@@ -1,9 +1,7 @@
 #include <iostream>
 #include "Term.h"
 
-Term::Term(std::string const &name, std::string const &regex) : Unit(name), regex(regex) {
-
-}
+Term::Term(std::string const &name, std::string const &regex) : Unit(name), regex(regex) {}
 
 bool Term::is_term() {
     return true;

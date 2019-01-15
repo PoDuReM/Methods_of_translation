@@ -504,5 +504,8 @@ CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/NonTerm.h
 CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/Term.h
 CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/Unit.h
 CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/Grammar.h
+CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/gen/Lexer.h
+CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/gen/Parser.h
+CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/gen/Tree.h
 CMakeFiles/parser-generator.dir/src/main.cpp.o: ../src/main.cpp
 

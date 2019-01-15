@@ -8,9 +8,7 @@ void NonTerm::add_rule(Rule const &rule, std::string const & code, const std::ve
     exp_lists.push_back(exp_list);
 }
 
-NonTerm::NonTerm(std::string const &name) : Unit(name) {
-
-}
+NonTerm::NonTerm(std::string const &name) : Unit(name) {}
 
 bool NonTerm::is_non_term() {
     return true;
@@ -19,15 +17,15 @@ bool NonTerm::is_non_term() {
 void NonTerm::print() {
     using std::cout;
     using std::endl;
-    cout << name << ":\n";
+    cout <<"🐷"<< name << ":\n";
     for (auto &rule : rules) {
-        cout << "| ";
+        cout << "🤔 ";
         for (auto &unit : rule) {
             cout << unit << " ";
         }
         cout << endl;
     }
-    cout << "ret type: " << ret_type << endl;
+    cout << "return type: " << ret_type << endl;
     cout << "code:\n";
     for (auto &c: code) {
         cout << c << endl;

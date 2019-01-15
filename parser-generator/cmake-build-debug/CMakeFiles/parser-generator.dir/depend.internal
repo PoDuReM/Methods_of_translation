@@ -505,4 +505,7 @@ CMakeFiles/parser-generator.dir/src/main.cpp.o
  ../src/Term.h
  ../src/Unit.h
  /Users/tina/Documents/ITMO/CT/MT/parser-generator/src/Grammar.h
+ /Users/tina/Documents/ITMO/CT/MT/parser-generator/src/gen/Lexer.h
+ /Users/tina/Documents/ITMO/CT/MT/parser-generator/src/gen/Parser.h
+ /Users/tina/Documents/ITMO/CT/MT/parser-generator/src/gen/Tree.h
  /Users/tina/Documents/ITMO/CT/MT/parser-generator/src/main.cpp

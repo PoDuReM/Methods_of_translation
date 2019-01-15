@@ -20,12 +20,12 @@ void Grammar::print() {
     for (auto &non_term : non_terms) {
         non_term.second->print();
     }
-    cout << "\t***\n";
+    cout << "🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒️️\n";
     cout << "Terms:\n";
     for (auto &term : terms) {
         term.second->print();
     }
-    cout << "\t***\n";
+    cout << "🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒️️\n";
     cout << "FIRST:\n";
     for (auto &non_term : non_terms) {
         cout << non_term.second->name << ":" << endl;
@@ -34,7 +34,7 @@ void Grammar::print() {
         }
         cout << endl;
     }
-    cout << "\t***\n";
+    cout << "🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒️️\n";
     cout << "FOLLOW:\n";
     for (auto &non_term : non_terms) {
         cout << non_term.second->name << ":" << endl;
@@ -154,12 +154,22 @@ void Grammar::gen_parser() {
     "\n"
     "using std::unique_ptr;\n"
     "using std::string;\n"
-    "int calc_fact(int x) {\n"
-    "    if (x < 2) {\n"
-    "        return 1; \n"
+    "int calc_pow(int a, int b) {\n"
+    "    int res = 1;\n"
+    "    for (int i = 0; i < b; ++i) {\n"
+    "        res *= a;\n"
     "    }\n"
-    "    return x * calc_fact(x - 1);\n"
+    "    return res;\n"
     "}\n"
+    "int calc_mul(int a, int b) {\n"
+    "    return a * b;\n"
+    "}\n"
+//    "int calc_fact(int x) {\n"
+//    "    if (x < 2) {\n"
+//    "        return 1; \n"
+//    "    }\n"
+//    "    return x * calc_fact(x - 1);\n"
+//    "}\n"
     "\n"
     "result<" << non_terms[start]->ret_type << "> Parser::parse(const string &__str) {\n"
     "    lexer = Lexer(__str);\n"

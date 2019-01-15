@@ -7,6 +7,10 @@
 #include "GrammarParser.h"
 #include "Grammar.h"
 
+#include "gen/Parser.h"
+#include "gen/Lexer.h"
+#include "gen/Tree.h"
+
 using namespace antlr4;
 
 int main() {

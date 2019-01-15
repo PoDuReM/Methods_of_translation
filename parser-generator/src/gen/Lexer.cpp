@@ -17,7 +17,6 @@ Lexer::Lexer(const string & s) : s(s), cur_pos(0) {
     token_regexps[OPEN] = std::regex("\\(");
     token_regexps[CLOSE] = std::regex("\\)");
     token_regexps[SUB] = std::regex("\\-");
-    token_regexps[FACT] = std::regex("\\!");
     token_regexps[NUM] = std::regex("\\d+");
     next_token();
 }

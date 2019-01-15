@@ -4,12 +4,6 @@
 
 using std::unique_ptr;
 using std::string;
-int calc_fact(int x) {
-    if (x < 2) {
-        return 1; 
-    }
-    return x * calc_fact(x - 1);
-}
 
 result<int> Parser::parse(const string &__str) {
     lexer = Lexer(__str);
@@ -26,51 +20,19 @@ result<int> Parser::add_sub() {
     int $val = res.val;
     switch (lexer.get_cur_tok()) {
         case NUM: {
-            auto $fact = fact();
-            root->append_child(std::move($fact.node));
+            auto $atom = atom();
+            root->append_child(std::move($atom.node));
             auto $add_sub_cont = add_sub_cont(0);
             root->append_child(std::move($add_sub_cont.node));
-            $val = $fact.val + $add_sub_cont.val; 
+            $val = $atom.val + $add_sub_cont.val; 
             break;
         }
         case OPEN: {
-            auto $fact = fact();
-            root->append_child(std::move($fact.node));
+            auto $atom = atom();
+            root->append_child(std::move($atom.node));
             auto $add_sub_cont = add_sub_cont(0);
             root->append_child(std::move($add_sub_cont.node));
-            $val = $fact.val + $add_sub_cont.val; 
-            break;
-        }
-        default: {
-            parser_error();
-        }
-    }
-    res.node = std::move(root);
-    res.val = $val;
-    return res;
-}
-
-
-result<int> Parser::fact_cont(int x) {
-    result<int> res;
-    node_t root(new Node("fact_cont"));
-    int $val = res.val;
-    switch (lexer.get_cur_tok()) {
-        case FACT: {
-            auto $FACT = term_symbol(lexer.get_cur_tok_text());
-            root->append_child(std::move($FACT.node));
-            auto $fact_cont = fact_cont(calc_fact(x));
-            root->append_child(std::move($fact_cont.node));
-            $val = $fact_cont.val; 
-            break;
-        }
-        case CLOSE:
-        case ADD:
-        case SUB:
-        case END$:
-        {
-            root->append_child(eps_symbol());
-            $val = x; 
+            $val = $atom.val + $add_sub_cont.val; 
             break;
         }
         default: {
@@ -91,21 +53,21 @@ result<int> Parser::add_sub_cont(int a) {
         case SUB: {
             auto $SUB = term_symbol(lexer.get_cur_tok_text());
             root->append_child(std::move($SUB.node));
-            auto $fact = fact();
-            root->append_child(std::move($fact.node));
+            auto $atom = atom();
+            root->append_child(std::move($atom.node));
             auto $add_sub_cont = add_sub_cont(a + 1);
             root->append_child(std::move($add_sub_cont.node));
-            $val = -$fact.val + $add_sub_cont.val; std::cout << a << std::endl; 
+            $val = -$atom.val + $add_sub_cont.val; std::cout << a << std::endl; 
             break;
         }
         case ADD: {
             auto $ADD = term_symbol(lexer.get_cur_tok_text());
             root->append_child(std::move($ADD.node));
-            auto $fact = fact();
-            root->append_child(std::move($fact.node));
+            auto $atom = atom();
+            root->append_child(std::move($atom.node));
             auto $add_sub_cont = add_sub_cont(a + 1);
             root->append_child(std::move($add_sub_cont.node));
-            $val = $fact.val + $add_sub_cont.val; std::cout << a << std::endl; 
+            $val = $atom.val + $add_sub_cont.val; std::cout << a << std::endl; 
             break;
         }
         case CLOSE:
@@ -113,37 +75,6 @@ result<int> Parser::add_sub_cont(int a) {
         {
             root->append_child(eps_symbol());
             $val = 0; std::cout << a << std::endl; 
-            break;
-        }
-        default: {
-            parser_error();
-        }
-    }
-    res.node = std::move(root);
-    res.val = $val;
-    return res;
-}
-
-
-result<int> Parser::fact() {
-    result<int> res;
-    node_t root(new Node("fact"));
-    int $val = res.val;
-    switch (lexer.get_cur_tok()) {
-        case NUM: {
-            auto $atom = atom();
-            root->append_child(std::move($atom.node));
-            auto $fact_cont = fact_cont($atom.val);
-            root->append_child(std::move($fact_cont.node));
-            $val = $fact_cont.val; 
-            break;
-        }
-        case OPEN: {
-            auto $atom = atom();
-            root->append_child(std::move($atom.node));
-            auto $fact_cont = fact_cont($atom.val);
-            root->append_child(std::move($fact_cont.node));
-            $val = $fact_cont.val; 
             break;
         }
         default: {

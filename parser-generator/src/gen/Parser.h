@@ -16,9 +16,7 @@ public:
 private:
     Lexer lexer;
     result<int> add_sub();
-    result<int> fact_cont(int x);
     result<int> add_sub_cont(int a);
-    result<int> fact();
     result<int> atom();
     result<std::string> term_symbol(std::string const & s);
     node_t eps_symbol();

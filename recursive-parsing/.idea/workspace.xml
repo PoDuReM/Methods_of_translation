@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="recursive-parsing" targetName="recursive-parsing" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32d8af57-fb99-45f5-b900-fa6ec2389a15" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/recursive-parsing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/03-bison-antlr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.idea/antlr.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.idea/libraries/antlr_4_7_1_complete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Calc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Comamands for folders.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Expr.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Expr.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Expr.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/ExprVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/Expr.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/ExprVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/gen/t.expr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/Expr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/Expr.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/Expr.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/generated/java/ExprVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/output/production/antlr/Expr.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/output/production/antlr/ExprLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/output/production/antlr/t.expr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/src/Calc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/src/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/src/t.expr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automatic generators/antlr/t.expr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/Token.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/Tree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Code.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/Code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/Code.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/cmake-build-debug/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/lexical_analyser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Code/parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Recursive parsing/Отчёт.pages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/Grammar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/Grammar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/NonTerm.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/NonTerm.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/Term.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/Term.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/CMakeFiles/parser-generator.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/parser-generator" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/cmake-build-debug/parser-generator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/examples/em_calculator.gr" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/examples/em_calculator.gr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/Grammar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/Grammar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/NonTerm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/NonTerm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/Term.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/Term.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/gen/Lexer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/gen/Lexer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/gen/Lexer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/gen/Lexer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/gen/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/gen/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/gen/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/gen/Parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../parser-generator/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../parser-generator/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/Token.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/Tree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Code.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/Code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/Code.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/cmake-build-debug/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/lexical_analyser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/parser.h" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="Code" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.44030482">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lexical_analyser.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/parser.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3015">
+                  <caret line="201" column="117" selection-start-line="201" selection-start-column="117" selection-end-line="201" selection-end-column="117" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tree.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#17#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="3" selection-start-column="3" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SECOND">
+                  <first_editor relative-caret-position="990">
+                    <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>// n</find>
+      <find>!</find>
+      <find>|</find>
+      <find>throw</find>
+      <find>{}</find>
+      <find>eps</find>
+      <find>static_cast&lt;char&gt;(</find>
+      <find>Expexted</find>
+      <find>Illegal character</find>
+      <find>@@</find>
+      <find>cur_char</find>
+      <find>static_cast&lt;char&gt;</find>
+      <find>las</find>
+      <find>is_blank</find>
+      <find>Token::</find>
+      <find>n, ! or (</find>
+      <find>std::to_string(lex.cur_pos)</find>
+      <find>+ lex.get_cur_char()</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lexical_analyser.cpp" />
+        <option value="$PROJECT_DIR$/syntactic_analyser.cpp" />
+        <option value="$PROJECT_DIR$/Token.h" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/parser.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/input.txt" />
+        <option value="$PROJECT_DIR$/lexical_analyser.h" />
+        <option value="$PROJECT_DIR$/Tree.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug/CMakeFiles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.recursive-parsing">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recursive-parsing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="recursive-parsing" TARGET_NAME="recursive-parsing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="recursive-parsing" RUN_TARGET_NAME="recursive-parsing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.recursive-parsing" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32d8af57-fb99-45f5-b900-fa6ec2389a15" name="Default" comment="" />
+      <created>1542148672617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542148672617</updated>
+      <workItem from="1542148674315" duration="3941000" />
+      <workItem from="1542201683046" duration="23000" />
+      <workItem from="1542210020015" duration="1342000" />
+      <workItem from="1542540807024" duration="27000" />
+      <workItem from="1542540852002" duration="614000" />
+      <workItem from="1542541806534" duration="538000" />
+      <workItem from="1542543913856" duration="2119000" />
+      <workItem from="1543236201538" duration="11870000" />
+      <workItem from="1543366463400" duration="573000" />
+      <workItem from="1543367090551" duration="548000" />
+      <workItem from="1543368157999" duration="4699000" />
+      <workItem from="1543398218753" duration="2654000" />
+      <workItem from="1543402126436" duration="16000" />
+      <workItem from="1543402159700" duration="150000" />
+      <workItem from="1543402327220" duration="5542000" />
+      <workItem from="1543573895581" duration="869000" />
+      <workItem from="1543958970894" duration="6223000" />
+      <workItem from="1544004393988" duration="1781000" />
+      <workItem from="1547567682689" duration="158000" />
+      <workItem from="1547567862183" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43748000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15736766" />
+      <window_info id="Structure" order="2" weight="0.24964234" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49865952" weight="0.2819277" />
+      <window_info anchor="bottom" id="CMake" order="1" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50214595" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49785408" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.22409639" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49928468" weight="0.35421687" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.4985694" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="13" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" weight="0.3297568" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22889842" />
+      <window_info id="Structure" order="2" weight="0.24964234" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49865952" visible="true" weight="0.2819277" />
+      <window_info anchor="bottom" id="CMake" order="1" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50214595" side_tool="true" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49785408" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49928468" weight="0.3180723" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.4985694" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="cur_char" language="ObjectiveC" />
+        <watch expression="cur_token" language="ObjectiveC" />
+        <watch expression="cur_pos" />
+        <watch expression="cur_term" language="ObjectiveC" />
+        <watch expression="lex.cur_token" language="ObjectiveC" />
+        <watch expression="node" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>node</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cur_term</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cur_pos</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lex.cur_token</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cur_token</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cur_char</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexical_analyser.cpp" />
+    <entry file="file://$PROJECT_DIR$/syntactic_analyser.cpp" />
+    <entry file="file://$PROJECT_DIR$/Token.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/README.md" />
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="193" column="64" selection-start-line="193" selection-start-column="64" selection-end-line="193" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/istream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="905" column="32" selection-start-line="905" selection-start-column="32" selection-end-line="905" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/_ctype.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="268" selection-start-line="268" selection-end-line="268" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3612" selection-start-line="3612" selection-end-line="3612" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3015">
+          <caret line="201" column="117" selection-start-line="201" selection-start-column="117" selection-end-line="201" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexical_analyser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="59" lean-forward="true" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="990">
+            <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
