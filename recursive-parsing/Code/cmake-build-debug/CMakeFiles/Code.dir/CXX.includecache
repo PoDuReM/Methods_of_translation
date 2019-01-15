@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/Token.h
+
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/Tree.h
+string
+-
+iostream
+-
+vector
+-
+
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/lexical_analyser.h
+iostream
+-
+Token.h
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/Token.h
+
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/main.cpp
+iostream
+-
+cstring
+-
+parser.h
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/parser.h
+
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/parser.h
+iostream
+-
+istream
+-
+cstdio
+-
+Token.h
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/Token.h
+Tree.h
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/Tree.h
+lexical_analyser.h
+/Users/tina/Documents/ITMO/CT/MT/Recursive parsing/Code/lexical_analyser.h
+
