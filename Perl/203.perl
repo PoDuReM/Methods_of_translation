@@ -1,4 +1,4 @@
-while (<>) { 
-	s/\b(\ia)+\b/argh/;
-	print ; 
+while (<>) {
+  s/\b(A|a)+\b/argh/;
+	print;
 }

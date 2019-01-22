@@ -1,4 +1,4 @@
-while (<>) { 
-	s/(a\w*a){3}/bad/g;
-	print ; 
+while (<>) {
+  s/(a.*?aa.*?aa.*?a)/bad/g;
+	print;
 }
