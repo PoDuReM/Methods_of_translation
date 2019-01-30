@@ -25,5 +25,13 @@ int main() {
     res.gen_code();
     res.print();
 
+    // testing
+    std::string s;
+    std::cout << "Input test: ";
+    std::cin >> s;
+    Parser parser;
+    std::cout << s + "\n";
+    std::cout << "here\n" << parser.parse(s).val << " <- the answer\n";
+
     return 0;
 }

@@ -13,10 +13,12 @@ inline bool starts_with(std::string const & s, std::string const & start) {
 
 Lexer::Lexer(const string & s) : s(s), cur_pos(0) {
     skip_symbols = {(char) 13, (char) 10, (char) 9, (char) 32};
-    token_regexps[ADD] = std::regex("\\+");
     token_regexps[OPEN] = std::regex("\\(");
-    token_regexps[CLOSE] = std::regex("\\)");
     token_regexps[SUB] = std::regex("\\-");
+    token_regexps[MUL] = std::regex("\\*");
+    token_regexps[ADD] = std::regex("\\+");
+    token_regexps[POW] = std::regex("\\^");
+    token_regexps[CLOSE] = std::regex("\\)");
     token_regexps[NUM] = std::regex("\\d+");
     next_token();
 }

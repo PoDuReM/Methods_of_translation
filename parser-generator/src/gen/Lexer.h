@@ -4,10 +4,12 @@
 #include <unordered_set>
 
 enum Token {
-    ADD,
     OPEN,
-    CLOSE,
     SUB,
+    MUL,
+    ADD,
+    POW,
+    CLOSE,
     NUM,
     END$
 };
@@ -22,7 +24,7 @@ public:
     size_t get_cur_pos();
     std::string get_cur_tok_text();
 private:
-    static const int tokens_num = 5;
+    static const int tokens_num = 7;
     std::regex token_regexps[tokens_num];
     std::unordered_set<char> skip_symbols;
 

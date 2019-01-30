@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <list>
+#include <string>
 
 class Node;
 using node_t = std::unique_ptr<Node>;

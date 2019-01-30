@@ -1,31 +1,22 @@
 ✋: add_sub;
 
 add_sub 🤯 [int]:
-    🤔 atom add_sub_cont{0}          { $val = $atom.val + $add_sub_cont.val; }
+    🤔 pow add_sub_cont{0}           { $val = $pow.val + $add_sub_cont.val; }
 ;
 
 add_sub_cont 🤓[int a] 🤯 [int]:
-    🤔 ADD atom add_sub_cont{a + 1}  { $val = $atom.val + $add_sub_cont.val; std::cout << a << std::endl; }
-    🤔 SUB atom add_sub_cont{a + 1}  { $val = -$atom.val + $add_sub_cont.val; std::cout << a << std::endl; }
-    🤔                               { $val = 0; std::cout << a << std::endl; }
-;
-
-mul 🤯[int]:
-    🤔 atom mul_pow_cont{$atom.val}          { $val = $mul_pow_cont.val; }
-;
-
-mul_cont 🤓[int a] 🤯 [int]:
-    🤔 MUL atom mul_pow_cont{a + 1}  { $val = $atom.val + $add_sub_cont.val; std::cout << a << std::endl; }
-    🤔                               { $val = 0; std::cout << a << std::endl; }
+    🤔 ADD pow add_sub_cont{a}       { $val = $pow.val + $add_sub_cont.val; std::cout << "ADD🎈" << res.val << std::endl; }
+    🤔 SUB pow add_sub_cont{a}       { $val = -$pow.val + $add_sub_cont.val; std::cout << "SUB🎈" << res.val << std::endl; }
+    🤔                               { $val = 0; std::cout << res.val << std::endl; }
 ;
 
 pow 🤯[int]:
-    🤔 atom pow_cont{$atom.val}          { $val = $mul_pow_cont.val; }
+    🤔 atom pow_cont{$atom.val}      { $val = $pow_cont.val; }
 ;
 
-pow_cont 🤓[int a, int b] 🤯 [int]:
-    🤔 MUL atom mul_pow_cont{a + 1}  { $val = $atom.val + $add_sub_cont.val; std::cout << a << std::endl; }
-    🤔                               { $val = 0; std::cout << a << std::endl; }
+pow_cont 🤓[int a] 🤯 [int]:
+    🤔 POW atom pow_cont{$atom.val}        { $val = std::pow(a, $pow_cont.val); std::cout << "POW🎈" << res.val << std::endl; }
+    🤔                                     { $val = a; std::cout << "POW0🎈" << res.val << std::endl; }
 ;
 
 atom 🤯 [int]:
